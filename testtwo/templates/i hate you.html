@@ -1,0 +1,343 @@
+{% load staticfiles%}
+<!doctype html>
+<html lang="en">
+  <head>
+     <style> 
+         .d:hover{
+           box-shadow: 20px;
+         background-color: red;
+         }
+         .dropdown:hover>.dropdown-menu {
+  display: block;
+}
+
+.dropdown>.dropdown-toggle:active {
+  /*Without this, clicking will make it sticky*/
+    pointer-events: none;
+}
+         h4,h5{text-shadow: 2px 2px;}
+  html,
+body,
+header,
+#intro {
+    height: 100%;
+}
+
+#intro {
+  background: url({% static "images/IM5.jpg" %})no-repeat center center fixed;;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}  
+      </style>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>RK WEBPAGE</title>
+  </head>
+  <body>
+<!--Navbar-->
+<div class="container">
+<nav style="background-color:black"class="navbar navbar-expand-lg navbar-dark primary-color fixed-top">
+
+  <!-- Navbar brand -->
+  <a class="navbar-brand" href="#"></a>
+
+  <!-- Collapse button -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+    aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <!-- Collapsible content -->
+  <div class="collapse navbar-collapse" id="basicExampleNav">
+
+    <!-- Links -->
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link d" href="http://127.0.0.1:8000">Home
+          <span class="sr-only">(current)</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link d"  href="http://127.0.0.1:8000/f">Features</a>
+      </li>
+
+
+      <!-- Dropdown -->
+      <li class="nav-item dropdown">
+        <div class="container-fluid">
+<div class="dropdown">
+  <button style="color: white" class="btn  dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Dropdown button
+  </button>
+  <div class="dropdown-menu d" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item d" href="#">Action</a>
+    <a class="dropdown-item d" href="#">Another action</a>
+    <a class="dropdown-item d" href="#">Something else here</a>
+  </div>
+</div>
+</div>
+      </li>
+
+    </ul>
+    <!-- Links -->
+
+    <form class="form-inline">
+      <div class="md-form my-0">
+        <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+      </div>
+    </form>
+  </div>
+  <!-- Collapsible content -->
+
+</nav>
+      </div>
+<!--/.Navbar-->
+    <!-- Bootstrap CSS -->
+  
+
+
+     <!--Mask-->
+<div style="height: 500px ;border: 5px solid black"id="intro" class="view border border-dark">
+
+  
+    <div style="margin-left:700px"class="mask rgba-black-strong">
+<br>
+        <br><br><br>
+        <div class="container-fluid d-flex align-items-center justify-content-center h-100">
+
+            <div class="row d-flex justify-content-center text-center">
+
+                <div class="col-md-10">
+
+                    <!-- Heading -->
+                    <h1 style="color: black;text-shadow: 2px 2px;" class="mb-2">DJANGO....NonStop</h1>
+
+                    <!-- Divider -->
+                    <hr  style="color: azure"class="hr-strong  white-text ">
+
+                    <!-- Description -->
+                    <h4   style="color:whitesmoke;text-shadow: 2px 2px;"class="white-text my-4">I LOVE DJANGO HI AM ROHIT KALYANI I CRETED THIS WEBSITE FOR DJANGO APP.ALL YOU NEED PROJECT THAT PROJECT I GIVE YOUR FEE OF COST HERE  </h4>
+                    <button type="button" class="btn btn-outline-white">Read more<i class="fas fa-book ml-2"></i></button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!--/.Mask-->
+      
+  <!--Section: Best Features-->
+      <div class="container">
+<section id="best-features" class="text-center">
+
+  <!-- Heading -->
+  <h2 style="text-shadow: 2px 2px;"class="mb-5">Best Features of developing with Django</h2>
+
+  <!--Grid row-->
+  <div class="row d-flex justify-content-center mb-4">
+
+      <!--Grid column-->
+      <div class="col-md-8">
+
+          <!-- Description -->
+          <p>Django is a free and open source web application framework written in Python. A framework is nothing more than a collection of modules that make development easier. They are grouped together, and allow you to create applications or websites from an existing source, instead of from scratch.</p>
+
+      </div>
+      <!--Grid column-->
+
+  </div>
+  <!--Grid row-->
+
+  <!--Grid row-->
+  <div class="row">
+
+      <!--Grid column-->
+      <div class="col-md-4 mb-1">
+          <i class="fas fa-camera-retro"></i>
+          <h4 class="my-4">Unbelievably fast</h4>
+          <p>Django was designed with the intention to help developers travel from a concept to a finished project as quickly as possible. When speaking about speed one has to consider performance. Django partakes in lower memory consumption and fewer demands on the database/network, becoming much less of a burden than many other frameworks out there.</p>
+      </div>
+      <!--Grid column-->
+
+      <!--Grid column-->
+      <div class="col-md-4 mb-1">
+          <i class="fas fa-heart"></i>
+          <h4 style="text-shadow: 2px 2px;"class="my-4">The Complete Package</h4>
+          <p>It comes with an object-relational mapper in which you describe your database layout in Python code. More than that, the data-model syntax provides many rich ways of representing your models. The migrate command glances over all available models and builds tables in your database for whichever ones that don’t exist. What’s more? It optionally provides richer schema control as well. In a nutshell, Django takes care of user authentication, site maps, content administration, RSS feeds and much more with simple commands.</p>
+      </div>
+      <!--Grid column-->
+
+      <!--Grid column-->
+      <div class="col-md-4 mb-1">
+          <i class="fas fa-bicycle"></i>
+          <h4 class="my-4">Highly Secure</h4>
+          <p>Its user authentication system provides a safe way to manage user accounts and passwords alongside ensuring developers stray away from making common mistakes such as: cross-site scripting, cross-site request, click jacking and forgery.</p>
+      </div>
+      <!--Grid column-->
+
+  </div>
+  <!--Grid row-->
+
+</section>
+      </div>
+      
+      <section id="best-features" class="text-center">
+
+  <!-- Heading -->
+  <h3 style="text-shadow: 2px 2px 5px red;" class="mb-5">DJANGO develop some app</h3>
+
+  <!--Grid row-->
+  <div class="row d-flex mb-4">
+
+      <!--Grid column-->
+     <div class=" container media">
+     <div class="media-body">
+     <a href="http://127.0.0.1:8000/a">
+  <img style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)"src="{% static "images/unicode.jpg" %}" width="70%" height="100%"class="mr-3" alt="...">
+  </a>
+  </div>
+  <div class="media-body">
+    <h5 class="mt-0"> Unicode </h5>
+    Unicode (https://www.unicode.org/) is a specification that aims to list every character used by human languages and give each character its own unique code. The Unicode specifications are continually revised and updated to add new languages and symbols.
+  </div>
+      </div>
+      <div class=" container media">
+<div class="row d-flex mb-4">
+      
+  <div class="media-body">
+    <h5  style="text-shadow: 2px 2px;"class="mt-0 mb-1">Calculator</h5>
+    In this example you will learn to create a simple calculator that can add, subtract, multiply or divide depending upon the input from the user.
+  </div>
+  <div class="media-body">
+<a class="media-body" href="http://127.0.0.1:8000/c"><img style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)" src="{% static "images/cc.jpg" %}" width="70%" height="100%" class="ml-3" alt="calculator image">
+    </a>
+    </div>
+</div>
+      </div>
+      <div class=" container media">
+    <div class="row d-flex mb-4">
+    <div class="media-body">
+   <a href="">
+  <img style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)"id="e"src="{% static "images/e.jpg" %}" width="70%" height="100%"class="mr-3" alt="...">
+  </a>
+  </div>
+  <div class="media-body">
+    <h5 style="text-shadow: 2px 2px;"class="mt-0">Encryped data</h5>
+    Cisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+  </div> 
+      </div> 
+      </div>
+           <div class=" container media">
+<div class="row d-flex mb-4">
+      
+  <div class="media-body">
+    <h5 style="text-shadow: 2px 2px;"class="mt-0 mb-1">VOWELS CHECKOUT</h5>
+     Python Code. In this program, user is asked to input a character. The program checks whether the entered character is equal to the lowercase or uppercase vowels, if it is then the program prints a message saying that the character is a Vowel else it prints that the character is a Consonant.
+  </div>
+  <div class="media-body">
+  <a href="">
+  <img style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" src="{% static "images/aeiou.jpg" %}" width="70%" height="100%" class="ml-3 " alt="calculator image">
+  </a>
+</div>
+</div>
+      </div>
+     
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+  </div>
+      </section>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

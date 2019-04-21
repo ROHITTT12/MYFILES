@@ -1,0 +1,140 @@
+{% load staticfiles%}
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Rk App</title>
+</head>
+    <style>
+    .g{
+          width:350px;
+          padding:50px;
+          background-color: thin black;
+          border:2px solid black;
+          border-radius:40px 0 ;    
+        } 
+
+    input#submit {
+background-color:red;
+border-radius:5px;
+border:blue;
+padding:6px 22px;
+color:#FFF;
+text-shadow:1px 4px  black;
+margin-left:120px;
+border:2px solid black;
+}
+      input#submit:hover{
+background-color: chocolate
+    
+}
+h1{
+  color="white";
+}
+h1:hover{
+background-color="red";
+
+}
+      input:hover{
+border:3px solid chocolate;
+    box-shadow:0 0 40px;
+}
+.i{
+margin-top:10px;
+margin-bottom:10px;
+width:310px;
+height:30px;
+font-size:14px;
+box-shadow:0 0 10px;
+border-radius:20px 0 ;
+padding: 1px     
+        }
+        .dropdown>.dropdown-toggle:active {
+  /*Without this, clicking will make it sticky*/
+    pointer-events: none;
+}
+         h4,h5{text-shadow: 2px 2px;}
+    </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<body style="background: url({% static "images/IM5.jpg" %})">
+<!--Navbar-->
+<div class="container">
+<nav style="background-color:black"class="navbar navbar-expand-lg navbar-dark primary-color fixed-top">
+
+  <!-- Navbar brand -->
+  <a class="navbar-brand" href="#"></a>
+
+  <!-- Collapse button -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+    aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <!-- Collapsible content -->
+  <div class="collapse navbar-collapse" id="basicExampleNav">
+
+    <!-- Links -->
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link d" href="http://127.0.0.1:8000">Home
+          <span class="sr-only">(current)</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link d"  href="http://127.0.0.1:8000/f">Features</a>
+      </li>
+
+
+      <!-- Dropdown -->
+      <li class="nav-item dropdown">
+        <div class="container-fluid">
+<div class="dropdown">
+  <button style="color: white" class="btn  dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Dropdown button
+  </button>
+  <div class="dropdown-menu d" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item d" href="#">Action</a>
+    <a class="dropdown-item d" href="#">Another action</a>
+    <a class="dropdown-item d" href="#">Something else here</a>
+  </div>
+</div>
+</div>
+      </li>
+
+    </ul>
+    <!-- Links -->
+
+    <form class="form-inline">
+      <div class="md-form my-0">
+        <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+      </div>
+    </form>
+  </div>
+  <!-- Collapsible content -->
+
+</nav>
+      </div>
+<!--/.Navbar-->
+ <center>
+     <h1>welcome Rk website</h1> 
+     <h1>Unicode chracter find out</h1> 
+</center>  
+<br>
+<br>
+<div >
+<div class="container text-center ">
+     <form action="{%  url 'input' %}" >   
+    <input class="i" type="number" placeholder="value" name="t1" pattern="[0-277]{2}"> <br>
+    <input class="i" type="text" placeholder="Char Only" name="t2" pattern="[A-Z a-Z]{2}" ><br>
+    <input id="submit" type="submit" value="U" name="top"><br>
+    <input id="submit" type="submit" value="C" name="top">
+    </form>
+    <div>
+</div>
+</body>
+</html>

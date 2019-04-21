@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+{% load staticfiles%}
+<html>
+<head>
+    <title>Rk App</title>
+</head>
+    <style>
+    .d:hover{
+           box-shadow: 20px;
+         background-color: red;
+         }
+         .dropdown:hover>.dropdown-menu {
+  display: block;
+}
+
+.dropdown>.dropdown-toggle:active {
+  /*Without this, clicking will make it sticky*/
+    pointer-events: none;
+}
+         h4,h5{text-shadow: 2px 2px;}
+    
+    .g{
+          width:350px;
+          padding:50px;
+          background-color: thin black;
+          border:2px solid black;
+          border-radius:40px 0 ;    
+        } 
+
+    input#submit {
+background-color:red;
+border-radius:5px;
+border:blue;
+padding:6px 22px;
+color:#FFF;
+text-shadow:1px 4px  black;
+margin-left:120px;
+ border:2px solid black;
+}
+      input#submit:hover{
+background-color: chocolate
+    
+}
+h1:hover{
+background-color=red;
+
+}
+      input:hover{
+border:3px solid chocolate;
+    box-shadow:0 0 40px;
+}
+        .i{
+
+margin-top:10px;
+margin-bottom:10px;
+width:310px;
+height:30px;
+font-size:14px;
+box-shadow:0 0 10px;
+border-radius:20px 0 ;
+padding: 1px
+         
+        }
+         body{
+    background: url({% static "images/IM1.jpg" %})no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}  
+    </style>
+   
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<body>
+<div class="container">
+<nav style="background-color:black"class="navbar navbar-expand-lg navbar-dark primary-color fixed-top">
+
+  <!-- Navbar brand -->
+ 
+
+  <!-- Collapse button -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+    aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <!-- Collapsible content -->
+  <div class="collapse navbar-collapse" id="basicExampleNav">
+
+    <!-- Links -->
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="http://127.0.0.1:8000/">Home
+          <span class="sr-only">(current)</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link"  href="#">Features</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Pricing</a>
+      </li>
+
+      <!-- Dropdown -->
+      <li class="nav-item dropdown">
+        <div class="container-fluid">
+<div class="dropdown">
+  <button style="color: white" class="btn  dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Dropdown button
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="#">Action</a>
+    <a class="dropdown-item" href="#">Another action</a>
+    <a class="dropdown-item" href="#">Something else here</a>
+  </div>
+</div>
+</div>
+      </li>
+
+    </ul>
+    <!-- Links -->
+
+    <form class="form-inline">
+      <div class="md-form my-0">
+        <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+      </div>
+    </form>
+  </div>
+  <!-- Collapsible content -->
+
+</nav>
+<br>
+<br>
+
+      </div>
+
+ <center>
+     <h1>welcome Rk website</h1> 
+     <br>
+     <br>
+     <h1>Unicode chracter find out</h1> 
+</center>  
+<div class="container text-center">
+    <h1>Your Unicode character </h1>
+    <h1 style="color:whitesmoke;text-shadow: 2px 2px;">{{result}}</h1>
+</div>
+</body>
+</html>
